@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ariaNg=AriaNg-1.2.2
+ariaNg=AriaNg-1.3.7
 #kiftd=kiftd-v1.0.35
 
 # 随机生成 rpc 密钥
