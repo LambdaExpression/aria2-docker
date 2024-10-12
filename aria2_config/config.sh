@@ -9,6 +9,7 @@ base64Secret=$( echo -n $secret | base64 )
 mkdir -p /root/.aria2
 mkdir -p /opt/AriaNg
 rm -rf /opt/AriaNg/*
+mv /root/.aria2/aria2.conf /root/.aria2/aria2.conf_bak || :
 cp /opt/aria2_config/aria2.conf  /root/.aria2/aria2.conf
 cp -rf /opt/aria2_config/$ariaNg/* /opt/AriaNg
 sed -i "s/{secret}/$secret/g" /root/.aria2/aria2.conf
